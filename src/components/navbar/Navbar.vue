@@ -9,11 +9,19 @@
 
       <div class="flex">
         <ul class="flex mt-5">
-          <li class="inline block mx-7 text-indigo-500">My Home</li>
-          <li class="inline block mx-7 text-indigo-500">Sing in</li>
+          <RouterLink class="inline block mx-7 text-indigo-500" to="/"
+            >My Home</RouterLink
+          >
+          <RouterLink class="inline block mx-7 text-indigo-500" to="/login"
+            >Sing in</RouterLink
+          >
           <li class="inline block mx-7 text-indigo-500">Sing Up</li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
+
+<script>
+import { RouterLink } from "vue-router";
+</script>

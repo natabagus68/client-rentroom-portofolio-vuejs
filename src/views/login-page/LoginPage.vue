@@ -1,9 +1,14 @@
 <template>
-  <div>Logn Page</div>
+  <div class="container">
+    <Navbar />
+  </div>
 </template>
 
 <script>
-export default {};
+import Navbar from "../../components/navbar/Navbar.vue";
+export default {
+  components: {
+    Navbar,
+  },
+};
 </script>
-
-<style lang="scss" scoped></style>
